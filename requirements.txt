@@ -1,0 +1,4 @@
+Django==6.0.3
+gunicorn
+whitenoise
+razorpay==2.0.1
