@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+  height: 100vh;
+
+  background: url("../images/login-bg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+.login-page {
+
+  width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+}
+
+.overlay {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(0, 0, 0, .55);
+
+}
+
+.login-card {
+
+  position: relative;
+
+  width: 420px;
+
+  background: rgba(255, 255, 255, .12);
+
+  backdrop-filter: blur(18px);
+
+  padding: 45px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .35);
+
+  text-align: center;
+
+  color: white;
+
+  z-index: 2;
+
+  animation: popup .7s ease;
+
+}
+
+.logo {
+
+  font-size: 55px;
+
+  color: #ffb347;
+
+  margin-bottom: 15px;
+
+}
+
+.login-card h2 {
+
+  font-size: 36px;
+
+  margin-bottom: 5px;
+
+}
+
+.login-card p {
+
+  margin-bottom: 35px;
+
+  color: #eee;
+
+}
+
+.input-box {
+
+  position: relative;
+
+  margin-bottom: 22px;
+
+}
+
+.input-box i {
+
+  position: absolute;
+
+  left: 18px;
+
+  top: 18px;
+
+  color: #ffb347;
+
+}
+
+.input-box input {
+
+  width: 100%;
+
+  padding: 15px 15px 15px 50px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, .18);
+
+  color: white;
+
+  font-size: 16px;
+
+}
+
+.input-box input::placeholder {
+
+  color: #f1f1f1;
+
+}
+
+.login-btn {
+
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background: #ff6b35;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .4s;
+
+}
+
+.login-btn:hover {
+
+  background: #ff4d00;
+
+  transform: translateY(-3px);
+
+}
+
+.bottom-text {
+
+  margin-top: 25px;
+
+}
+
+.bottom-text a {
+
+  color: #ffb347;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+}
+
+.bottom-text a:hover {
+
+  text-decoration: underline;
+
+}
+
+@keyframes popup {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .login-card {
+
+    width: 90%;
+
+    padding: 35px 25px;
+
+  }
+
+}
+
+/* ==========================
+      SIGN UP
+========================== */
+
+.signup-page {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.signup-card {
+
+  position: relative;
+
+  width: 520px;
+
+  background: rgba(255, 255, 255, .12);
+
+  backdrop-filter: blur(18px);
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .35);
+
+  z-index: 2;
+
+  color: white;
+
+  animation: popup .7s ease;
+
+}
+
+.signup-card h2 {
+
+  text-align: center;
+
+  margin-bottom: 10px;
+
+}
+
+.signup-card p {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: #eee;
+
+}
+
+.signup-card textarea {
+
+  width: 100%;
+
+  height: 90px;
+
+  padding: 15px 15px 15px 50px;
+
+  background: rgba(255, 255, 255, .18);
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 18px;
+
+  color: white;
+
+  resize: none;
+
+}
+
+.signup-card textarea::placeholder {
+
+  color: #eee;
+
+}
+
+@media(max-width:600px) {
+
+  .signup-card {
+
+    width: 92%;
+
+    padding: 30px;
+
+  }
+
+}

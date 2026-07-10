@@ -1,0 +1,337 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    overflow-x:hidden;
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar{
+    background:#fff;
+    padding:18px 0;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#ff6b35 !important;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+.nav-link{
+    margin-left:18px;
+    font-weight:500;
+    color:#333 !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ff6b35 !important;
+}
+
+.signup-btn{
+    margin-left:20px;
+    background:#ff6b35;
+    color:white !important;
+    padding:10px 24px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.signup-btn:hover{
+    background:#ff4d00;
+}
+
+.login-btn{
+    font-weight:600;
+}
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#fff5f2,#ffe7db);
+
+}
+
+.hero h1{
+
+    font-size:65px;
+
+    font-weight:700;
+
+    color:#222;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:550px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.btn-main{
+
+    background:#ff6b35;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn-main:hover{
+
+    background:#ff4d00;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-light{
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+        FEATURES
+=========================== */
+
+.features{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:60px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature-card i{
+
+    font-size:60px;
+
+    color:#ff6b35;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+
+    background:#1f2937;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer p{
+
+    margin:0;
+
+}
+
+/* ===========================
+        ANIMATION
+=========================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 0;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero-image{
+
+    margin-top:50px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.features h2{
+
+    font-size:32px;
+
+}
+
+.signup-btn{
+
+    margin-left:0;
+
+    margin-top:15px;
+
+}
+
+}

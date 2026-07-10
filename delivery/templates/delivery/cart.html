@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MealMate | Cart</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{% static 'delivery/css/customer.css' %}">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="{% url 'index' %}">
+                <i class="fa-solid fa-utensils"></i>
+                MealMate
+            </a>
+
+            <span class="welcome">
+
+                Hi,
+
+                <b>{{ username }}</b>
+
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Your Cart
+
+            </h2>
+
+            <div class="row">
+
+                <!-- Cart Items -->
+
+                <div class="col-lg-8">
+
+                    {% if itemList %}
+
+                    {% for item in itemList %}
+
+                    <div class="cart-card">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-3 text-center">
+
+                                <img src="{{ item.picture }}" class="img-fluid rounded" alt="{{ item.name }}">
+
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <h4>{{ item.name }}</h4>
+
+                                <p>{{ item.description }}</p>
+
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <h5 class="price">
+
+                                    ₹ {{ item.price }}
+
+                                </h5>
+
+                            </div>
+
+                            <div class="col-md-2 text-end">
+
+                                <a href="{% url 'remove_from_cart' item.id username %}" class="btn btn-outline-danger">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% endfor %}
+
+                    {% else %}
+
+                    <div class="alert alert-warning text-center">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        Your cart is empty.
+
+                    </div>
+
+                    {% endif %}
+
+                </div>
+
+                <!-- Order Summary -->
+
+                <div class="col-lg-4">
+
+                    <div class="summary-card">
+
+                        <h3>
+
+                            Order Summary
+
+                        </h3>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <span>Total Amount</span>
+
+                            <strong>
+
+                                ₹ {{ total_price }}
+
+                            </strong>
+
+                        </div>
+
+                        {% if itemList %}
+
+                        <form action="{% url 'checkout' username %}">
+
+                            <button class="btn checkout-btn">
+
+                                <i class="fa-solid fa-credit-card"></i>
+
+                                Proceed to Checkout
+
+                            </button>
+
+                        </form>
+
+                        {% else %}
+
+                        <button class="btn checkout-btn" disabled>
+
+                            Cart is Empty
+
+                        </button>
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

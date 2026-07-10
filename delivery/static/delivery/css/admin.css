@@ -1,0 +1,455 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+  background: #f4f6fb;
+
+}
+
+/* Navbar */
+
+.navbar {
+
+  background: #ff6b35;
+
+  padding: 18px 0;
+
+}
+
+.logo {
+
+  font-size: 28px;
+  font-weight: 700;
+
+}
+
+/* Dashboard */
+
+.dashboard {
+
+  padding: 70px 0;
+
+  text-align: center;
+
+}
+
+.dashboard h1 {
+
+  font-size: 45px;
+  font-weight: 700;
+  color: #222;
+
+}
+
+.dashboard p {
+
+  color: #666;
+  margin-top: 10px;
+
+}
+
+/* Cards */
+
+.dashboard-card {
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+  transition: .4s;
+
+  margin-bottom: 30px;
+
+}
+
+.dashboard-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+.icon {
+
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #fff3ed;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 38px;
+
+  color: #ff6b35;
+
+  margin-bottom: 25px;
+
+}
+
+.dashboard-card h3 {
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+}
+
+.dashboard-card p {
+
+  margin-bottom: 30px;
+
+}
+
+/* Button */
+
+.btn-main {
+
+  background: #ff6b35;
+
+  color: white;
+
+  padding: 12px 35px;
+
+  border-radius: 40px;
+
+  font-weight: 600;
+
+}
+
+.btn-main:hover {
+
+  background: #ff4d00;
+
+  color: white;
+
+}
+
+/* ===========================
+        FORM PAGE
+=========================== */
+
+.form-section {
+
+  padding: 60px 0;
+
+}
+
+.form-card {
+
+  max-width: 750px;
+
+  margin: auto;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+}
+
+.form-card h2 {
+
+  text-align: center;
+
+  margin-bottom: 35px;
+
+  color: #ff6b35;
+
+  font-weight: 700;
+
+}
+
+.form-card label {
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  display: block;
+
+  color: #444;
+
+}
+
+.form-control {
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+}
+
+.form-control:focus {
+
+  border-color: #ff6b35;
+
+  box-shadow: 0 0 0 .2rem rgba(255, 107, 53, .2);
+
+}
+
+.btn-main {
+
+  background: #ff6b35;
+
+  color: white;
+
+  padding: 13px 40px;
+
+  border-radius: 40px;
+
+  font-weight: 600;
+
+  font-size: 17px;
+
+  border: none;
+
+  transition: .3s;
+
+}
+
+.btn-main:hover {
+
+  background: #ff4d00;
+
+  color: white;
+
+  transform: translateY(-2px);
+
+}
+
+/* ==============================
+      RESTAURANT PAGE
+============================== */
+
+.restaurant-section {
+
+  padding: 60px 0;
+
+}
+
+.page-title {
+
+  text-align: center;
+
+  font-size: 40px;
+
+  font-weight: 700;
+
+  margin-bottom: 45px;
+
+  color: #ff6b35;
+
+}
+
+.restaurant-card {
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+  transition: .4s;
+
+  height: 100%;
+
+}
+
+.restaurant-card:hover {
+
+  transform: translateY(-8px);
+
+}
+
+.restaurant-card img {
+
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+}
+
+.card-body {
+
+  padding: 22px;
+
+}
+
+.card-body h4 {
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+}
+
+.card-body p {
+
+  color: #666;
+
+  margin-bottom: 12px;
+
+}
+
+.btn {
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+}
+
+.btn-warning {
+
+  color: white;
+
+  background: #f39c12;
+
+  border: none;
+
+}
+
+.btn-warning:hover {
+
+  background: #d68910;
+
+}
+
+.btn-primary {
+
+  background: #3498db;
+
+  border: none;
+
+}
+
+.btn-primary:hover {
+
+  background: #2e86c1;
+
+}
+
+.btn-danger {
+
+  background: #e74c3c;
+
+  border: none;
+
+}
+
+.btn-danger:hover {
+
+  background: #c0392b;
+
+}
+
+/* ===============================
+        MENU PAGE
+================================ */
+
+.menu-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+  transition: .3s;
+
+  height: 100%;
+
+}
+
+.menu-card:hover {
+
+  transform: translateY(-8px);
+
+}
+
+.menu-card img {
+
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+}
+
+.menu-body {
+
+  padding: 20px;
+
+}
+
+.menu-body h4 {
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+
+}
+
+.menu-body p {
+
+  color: #666;
+
+  height: 70px;
+
+  overflow: hidden;
+
+}
+
+.menu-body h5 {
+
+  color: #ff6b35;
+
+  font-weight: 700;
+
+  margin: 15px 0;
+
+}
+
+.form-check-input {
+
+  width: 20px;
+
+  height: 20px;
+
+}
+
+.form-check-label {
+
+  margin-left: 10px;
+
+  font-weight: 600;
+
+}
